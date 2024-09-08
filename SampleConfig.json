@@ -1,0 +1,32 @@
+{
+	"name": "talkTV",
+	"description": "Sample plugin",
+	"author": "ti",
+	"authorUrl": "http://127.0.0.1:3000",
+
+	"sourceUrl": "http://127.0.0.1:3000/SampleConfig.json",
+	"repositoryUrl": "http://127.0.0.1:3000",
+	"scriptUrl": "./SampleScript.js",
+	"version": 1,
+
+	"iconUrl": "./sample.png",
+	"id": "82b8fefc-24aa-11ee-be56-0242ac180002",
+
+	"scriptSignature": "",
+	"scriptPublicKey": "",
+	"packages": ["Http", "DOMParser"],
+
+	"allowEval": false,
+	"allowUrls": [
+			"everywhere"
+	],
+
+	"authentication": {
+			"loginUrl": "https://talktv.cz/prihlasit",
+			"cookiesToFind": [
+					"PHPSESSID"
+			],
+			"userAgent": "Mozilla/5.0 (Linux; Android 12) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.230 Mobile Safari/537.36"
+	}
+
+}
