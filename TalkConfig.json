@@ -29,7 +29,7 @@
 	"supportedClaimTypes": [1],
 
 	"authentication": {
-		"loginUrl": "https://talk.cz/prihlasit",
+		"loginUrl": "https://talktv.cz/",
 		"completionUrl": "https://www.talktv.cz/",
 		"cookiesToFind": [
 			"PHPSESSID"
