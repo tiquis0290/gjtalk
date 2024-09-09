@@ -134,6 +134,7 @@ class TalkVideoPager extends VideoPager {
 			url = context.url;
 		}
 		var divs = http.GET(url, {}, true).body;
+		throw new ScriptException(divs);
 		var dom = domParser.parseFromString(divs);
 		var listItems = dom.getElementsByClassName('list__row');
 		if (listItems.length == 0) {
