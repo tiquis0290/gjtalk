@@ -17,12 +17,9 @@ source.getHome = function () {
 
 
 function findChannel(colorid, channels) {
-	//throw new ScriptException("colorid: " + colorid + " channels: " + channels.length);
-	var l = [];
 	var i = 0;
 	var n = 0;
 	channels.forEach(function (chan) {
-		l.push(chan.colorid);
 		//throw new ScriptException("|"+chan.colorid + "|" + colorid+ "|");
 		if (chan.colorid == colorid) {
 			//throw new ScriptException("same");
