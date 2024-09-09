@@ -132,13 +132,17 @@ source.getChannelContents = function (url) {
 
 class TalkVideoPager extends VideoPager {
 	constructor(context) {
-		let url2 = context.url + "?pages=" + context.page;
-		var divs = http.GET(url2, {}, true).body;
-		var dom = domParser.parseFromString(divs);
-		var listItems = dom.getElementsByClassName('list__item');
-		if (listItems.length == 0) {
-			listItems = dom.getElementsByClassName('sidevideos__content')[0].querySelectorAll('a');
+		let url = context.url + "?pages=" + context.page;
+		if (context.page == 0) {
+			url = context.url;
 		}
+		var divs = http.GET(url, {}, true).body;
+		var dom = domParser.parseFromString(divs);
+		var listItems = dom.getElementsByClassName('list__row');
+		if (listItems.length == 0) {
+			listItems = dom.getElementsByClassName('sidevideos__content');
+		}
+		listItems = listItems[0].querySelectorAll('a');
 		while (listItems[0].textContent !== context.last && listItems.length > 0 && context.last != null) {
 			listItems = listItems.slice(1);
 			//throw new ScriptException("listItems: " + listItems[0].innerHTML);
@@ -304,20 +308,11 @@ source.getContentDetails = function (url) {
 	]
 	);
 	pvd.getContentRecommendations = function() {
-		const initialData = finalResult.__initialData;
-		if(!initialData)
-			return new VideoPager([], false);
-		return source.getContentRecommendations(url);
+		return new TalkVideoPager({ page: 0, last: null, url: url });
 	}
 
 	return pvd
 };
-
-
-source.getContentRecommendations = (url) => {
-	return new TalkVideoPager({ page: 1, last: null, url: url });
-};
-
 
 //Comments
 source.getComments = function (url) {
