@@ -4,13 +4,14 @@
 	"author": "tiquis",
 	"authorUrl": "https://github.com/tiquis0290",
 
+	"platformUrl": "https://talk.cz",
 	"sourceUrl": "https://tiquis0290.github.io/gjtalk/SampleConfig.json",
 	"repositoryUrl": "https://tiquis0290.github.io/gjtalk/",
 	"scriptUrl": "./TalkScript.js",
 	"version": 1,
 
 	"iconUrl": "./talk.png",
-	"id": "82b8fefc-24aa-11ee-be56-0242ac180045",
+	"id": "9d4e365d-6a49-464a-a75c-d7d79b8bd990",
 
 	"scriptSignature": "",
 	"scriptPublicKey": "",
@@ -22,6 +23,9 @@
 		"talktv.cz",
 		"talk.cz"
 	],
+
+	
+	"supportedClaimTypes": [1],
 
 	"authentication": {
 		"loginUrl": "https://talk.cz/prihlasit",
