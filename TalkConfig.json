@@ -30,6 +30,7 @@
 
 	"authentication": {
 		"loginUrl": "https://talk.cz/prihlasit",
+		"completionUrl": "https://www.talktv.cz",
 		"cookiesToFind": [
 			"PHPSESSID"
 		],
