@@ -215,7 +215,7 @@ function serializeVideo(item, channels, colorid, videourl,) {
 			"listopadu": 10,
 			"prosinece": 11
 		};
-		date = parseInt(new Date(parseInt(year), monthMap[monthName], parseInt(day), 12).getTime() / 1000);
+		date = parseInt(new Date(parseInt(year), monthMap[monthName], parseInt(day)).getTime() / 1000);
 	}
 	var name = item.getElementsByClassName('video-header__title')[0];
 	if (name == undefined) {
