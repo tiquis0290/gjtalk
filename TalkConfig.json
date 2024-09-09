@@ -8,9 +8,9 @@
 	"sourceUrl": "https://tiquis0290.github.io/gjtalk/TalkConfig.json",
 	"repositoryUrl": "https://tiquis0290.github.io/gjtalk/",
 	"scriptUrl": "./TalkScript.js",
-	"version": 2,
+	"version": 3,
 
-	"iconUrl": "./talk.png",
+	"iconUrl": "./logo.svg",
 	"id": "9d4e365d-6a49-464a-a75c-d7d79b8bd990",
 
 	"scriptSignature": "",
