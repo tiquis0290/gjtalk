@@ -1,16 +1,16 @@
 {
 	"name": "TALK",
 	"description": "TALK je místo, kde najdeš ty nejlepší české podcasty. Jsme komunitní projekt pár bláznů, kteří fakt nemají rádi bullshity. Takže neděláme spolupráce. Ani product placement. A už vůbec ne placené recenze.",
-	"author": "ti",
-	"authorUrl": "http://139.162.157.11:3000",
+	"author": "tiquis",
+	"authorUrl": "https://github.com/tiquis0290",
 
-	"sourceUrl": "http://139.162.157.11:3000/SampleConfig.json",
-	"repositoryUrl": "http://139.162.157.11:3000",
-	"scriptUrl": "./SampleScript.js",
+	"sourceUrl": "https://tiquis0290.github.io/gjtalk/SampleConfig.json",
+	"repositoryUrl": "https://tiquis0290.github.io/gjtalk/",
+	"scriptUrl": "./TalkScript.js",
 	"version": 1,
 
 	"iconUrl": "./talk.png",
-	"id": "82b8fefc-24aa-11ee-be56-0242ac180002",
+	"id": "82b8fefc-24aa-11ee-be56-0242ac180045",
 
 	"scriptSignature": "",
 	"scriptPublicKey": "",
@@ -29,15 +29,6 @@
 			"PHPSESSID"
 		],
 		"userAgent": "Mozilla/5.0 (Linux; Android 12) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.230 Mobile Safari/537.36"
-	},
-	"settings": [
-        {
-            "variable": "odyseeActivity",
-            "name": "Provide Odysee Activity",
-            "description": "Tell Odysee what you played.",
-            "type": "Integer",
-            "default": "false"
-        }
-    ]
+	}
 
 }
