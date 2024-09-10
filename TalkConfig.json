@@ -20,8 +20,10 @@
 	"allowEval": false,
 	"allowUrls": [
 		"www.talktv.cz",
+		"static.talktv.cz",
 		"talktv.cz",
 		"www.talk.cz",
+		"static.talk.cz",
 		"talk.cz"
 	],
 
