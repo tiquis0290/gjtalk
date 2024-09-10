@@ -48,7 +48,7 @@ function convertDurationToSeconds(timeString) {
 }
 
 source.searchSuggestions = function (query) {
-	throw new ScriptException("This is a sample");
+	return [];
 };
 source.getSearchCapabilities = () => {
 	return {
