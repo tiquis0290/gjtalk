@@ -112,6 +112,7 @@ source.getChannel = function (url) {
 	else{
 		var colorid = text.getAttribute('class').split('-')[2];
 		text = text.textContent;
+		throw new ScriptException("https://static.talktv.cz/images/show-0"+ colorid +"-photo.png");
 		return new PlatformChannel({
 			id: new PlatformID(PLATFORM, url.split(".cz")[1], plugin.config.id),
 			name: dom.getElementsByClassName('show-hero__header-container')[0].firstChild.textContent,
