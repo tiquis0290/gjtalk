@@ -96,7 +96,7 @@ source.isChannelUrl = function (url) {
 source.getChannel = function (url) {
 	const body = http.GET(url, {}, true).body;
 	var dom = domParser.parseFromString(body);
-	var text = dom.getElementsByClassName('show-hero__article')[0]
+	var text = dom.getElementsByClassName('show-hero__article')[0];
 	if (text == undefined) {
 		text = dom.getElementsByClassName('video-list-hero__article')[0].textContent;
 		return new PlatformChannel({
@@ -110,11 +110,12 @@ source.getChannel = function (url) {
 		})
 	}
 	else{
+		var colorid = text.getAttribute('class').split('-')[2];
 		text = text.textContent;
 		return new PlatformChannel({
 			id: new PlatformID(PLATFORM, url.split(".cz")[1], plugin.config.id),
 			name: dom.getElementsByClassName('show-hero__header-container')[0].firstChild.textContent,
-			thumbnail: dom.getElementsByClassName('show-hero__img')[0].getAttribute('data-bg'),
+			thumbnail: "https://static.talktv.cz/images/show-0"+ colorid +"-photo.png",
 			banner: dom.getElementsByClassName('show-hero__img')[0].getAttribute('data-bg'),
 			subscribers: 0,
 			description: text.substring(text.indexOf('notifikace') + 11),
