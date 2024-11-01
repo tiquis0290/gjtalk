@@ -1,9 +1,9 @@
 const PLATFORM = "Talk";
-const LINK = "https://talk.cz";
+const LINK = "https://talktv.cz";
 
-const VIDEO_REGEX = /^https:\/\/talk\.cz\/video\/([a-zA-Z0-9-_]+)\/?$/
-const CHANNEL_REGEX = /^https:\/\/talk\.cz\/([a-zA-Z0-9-_]+)\/?$/
-const ARCHIVE_REGEX = /^https:\/\/talk\.cz\/seznam-videi\/([a-zA-Z0-9-_]+)\/?$/
+const VIDEO_REGEX = /^https:\/\/talktv\.cz\/video\/([a-zA-Z0-9-_]+)\/?$/
+const CHANNEL_REGEX = /^https:\/\/talktv\.cz\/([a-zA-Z0-9-_]+)\/?$/
+const ARCHIVE_REGEX = /^https:\/\/talktv\.cz\/seznam-videi\/([a-zA-Z0-9-_]+)\/?$/
 
 var config = {};
 
