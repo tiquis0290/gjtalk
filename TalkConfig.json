@@ -1,39 +1,44 @@
 {
-	"name": "TALK",
-	"description": "TALK je místo, kde najdeš ty nejlepší české podcasty. Jsme komunitní projekt pár bláznů, kteří fakt nemají rádi bullshity. Takže neděláme spolupráce. Ani product placement. A už vůbec ne placené recenze.",
-	"author": "tiquis",
-	"authorUrl": "https://github.com/tiquis0290",
-
-	"platformUrl": "https://talktv.cz",
-	"sourceUrl": "https://raw.githubusercontent.com/tiquis0290/gjtalk/refs/heads/main/TalkConfig.json",
-	"repositoryUrl": "https://github.com/tiquis0290/gjtalk/",
-	"scriptUrl": "./TalkScript.js",
-	"version": 7,
-
-	"iconUrl": "./Talk.png",
-	"id": "9d4e365d-6a49-464a-a75c-d7d79b8bd990",
-
+	"name": "Odysee",
+	"description": "A video platform running on the LBRY blockchain, owned by LBRY.",
+	"author": "FUTO",
+	"authorUrl": "https://futo.org",
+	"platformUrl": "https://odysee.com",
+	"sourceUrl": "https://plugins.grayjay.app/Odysee/OdyseeConfig.json",
+	"repositoryUrl": "https://futo.org",
+	"scriptUrl": "./OdyseeScript.js",
+	"version": 38,
+	"iconUrl": "./OdyseeIcon.png",
+	"id": "1c05bfc3-08b9-42d0-93d3-6d52e0fd34d8",
 	"scriptSignature": "",
 	"scriptPublicKey": "",
-	"packages": ["Http", "DOMParser"],
-
+	"packages": ["Http"],
 	"allowEval": false,
 	"allowUrls": [
-		"www.talktv.cz",
-		"static.talktv.cz",
-		"talktv.cz",
+		"api.na-backend.odysee.com",
+		"odysee.com",
+		"api.odysee.com",
+		"lighthouse.odysee.tv",
+		"cdn.lbryplayer.xyz",
+		"player.odycdn.com",
+		"comments.odysee.tv",
+		"watchman.na-backend.odysee.com"
 	],
-
-	
-	"supportedClaimTypes": [1],
-
+	"supportedClaimTypes": [3],
 	"authentication": {
-		"loginUrl": "https://talktv.cz/",
-		"completionUrl": "https://www.talktv.cz/",
-		"cookiesToFind": [
-			"PHPSESSID"
-		],
-		"userAgent": "Mozilla/5.0 (Linux; Android 12) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.230 Mobile Safari/537.36"
-	}
-
+		"loginUrl": "https://odysee.com/$/signin",
+		"userAgent": "Mozilla/5.0 (Linux; Android 12) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.230 Mobile Safari/537.36",
+		"domainHeadersToFind": {
+			"api.na-backend.odysee.com": ["X-Lbry-Auth-Token"]
+		}
+	},
+	"settings": [
+        {
+            "variable": "odyseeActivity",
+            "name": "Provide Odysee Activity",
+            "description": "Tell Odysee what you played.",
+            "type": "Boolean",
+            "default": "false"
+        }
+    ]
 }
