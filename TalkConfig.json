@@ -4,7 +4,7 @@
 	"author": "tiquis",
 	"authorUrl": "https://github.com/tiquis0290",
 
-	"platformUrl": "https://talk.cz",
+	"platformUrl": "https://talktv.cz",
 	"sourceUrl": "https://raw.githubusercontent.com/tiquis0290/gjtalk/refs/heads/main/TalkConfig.json",
 	"repositoryUrl": "https://github.com/tiquis0290/gjtalk/",
 	"scriptUrl": "./TalkScript.js",
@@ -22,9 +22,6 @@
 		"www.talktv.cz",
 		"static.talktv.cz",
 		"talktv.cz",
-		"www.talk.cz",
-		"static.talk.cz",
-		"talk.cz"
 	],
 
 	
